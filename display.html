@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelForge AI - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://platform-outputs.agnes-ai.space/images/t2i/e155a07e4b5c4a49811eb869a2980e2e.png" alt="PixelForge AI Logo">
+                <span>PixelForge AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="display.html">Gallery</a>
+                <a href="docs.html">Docs</a>
+                <a href="#" class="btn-nav">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Display Hero -->
+    <section class="display-hero">
+        <div class="container">
+            <h1>Community Gallery</h1>
+            <p>Browse thousands of AI-generated masterpieces</p>
+        </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="display-controls">
+        <div class="container">
+            <div class="controls-row">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="landscape">Landscapes</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn" data-filter="abstract">Abstract</button>
+                    <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search images...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="display-gallery">
+        <div class="container">
+            <div class="masonry-grid" id="galleryGrid">
+                <!-- Item 1 -->
+                <div class="masonry-item" data-category="landscape">
+                    <img src="https://picsum.photos/400/500?random=10" alt="Mountain Landscape">
+                    <div class="item-overlay">
+                        <h4>Mountain Sunrise</h4>
+                        <p>By @artcreator • 2.5k likes</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="masonry-item" data-category="portrait">
+                    <img src="https://picsum.photos/400/600?random=11" alt="Portrait">
+                    <div class="item-overlay">
+                        <h4>Cyberpunk Portrait</h4>
+                        <p>By @neonartist • 3.1k likes</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="masonry-item" data-category="abstract">
+                    <img src="https://picsum.photos/400/400?random=12" alt="Abstract Art">
+                    <div class="item-overlay">
+                        <h4>Color Explosion</h4>
+                        <p>By @pixelforge • 1.8k likes</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="masonry-item" data-category="fantasy">
+                    <img src="https://picsum.photos/400/550?random=13" alt="Fantasy Scene">
+                    <div class="item-overlay">
+                        <h4>Dragon's Lair</h4>
+                        <p>By @fantasyking • 4.2k likes</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="masonry-item" data-category="landscape">
+                    <img src="https://picsum.photos/400/450?random=14" alt="Ocean View">
+                    <div class="item-overlay">
+                        <h4>Ocean Sunset</h4>
+                        <p>By @naturelover • 2.9k likes</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="masonry-item" data-category="portrait">
+                    <img src="https://picsum.photos/400/520?random=15" alt="Portrait">
+                    <div class="item-overlay">
+                        <h4>Steampunk Character</h4>
+                        <p>By @retrofuture • 3.5k likes</p>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="masonry-item" data-category="abstract">
+                    <img src="https://picsum.photos/400/480?random=16" alt="Geometric Art">
+                    <div class="item-overlay">
+                        <h4>Geometric Dreams</h4>
+                        <p>By @modernart • 2.1k likes</p>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="masonry-item" data-category="fantasy">
+                    <img src="https://picsum.photos/400/600?random=17" alt="Castle">
+                    <div class="item-overlay">
+                        <h4>Enchanted Castle</h4>
+                        <p>By @dreamweaver • 5.1k likes</p>
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="masonry-item" data-category="landscape">
+                    <img src="https://picsum.photos/400/420?random=18" alt="Forest">
+                    <div class="item-overlay">
+                        <h4>Mystic Forest</h4>
+                        <p>By @woodland • 2.7k likes</p>
+                    </div>
+                </div>
+                <!-- Item 10 -->
+                <div class="masonry-item" data-category="portrait">
+                    <img src="https://picsum.photos/400/580?random=19" alt="Futuristic">
+                    <div class="item-overlay">
+                        <h4>Future Human</h4>
+                        <p>By @cyberartist • 3.8k likes</p>
+                    </div>
+                </div>
+                <!-- Item 11 -->
+                <div class="masonry-item" data-category="abstract">
+                    <img src="https://picsum.photos/400/500?random=20" alt="Fluid Art">
+                    <div class="item-overlay">
+                        <h4>Fluid Motion</h4>
+                        <p>By @fluidmaster • 1.9k likes</p>
+                    </div>
+                </div>
+                <!-- Item 12 -->
+                <div class="masonry-item" data-category="fantasy">
+                    <img src="https://picsum.photos/400/460?random=21" alt="Unicorn">
+                    <div class="item-overlay">
+                        <h4>Magical Unicorn</h4>
+                        <p>By @fantasyworld • 4.5k likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <img src="" alt="Full Size Image" id="modalImage">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>
+                        <img src="https://platform-outputs.agnes-ai.space/images/t2i/e155a07e4b5c4a49811eb869a2980e2e.png" alt="Logo">
+                        PixelForge AI
+                    </h3>
+                    <p>Transforming imagination into reality with cutting-edge AI image generation technology.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="display.html">Gallery</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PixelForge AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter buttons functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const masonryItems = document.querySelectorAll('.masonry-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                masonryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                
+                masonryItems.forEach(item => {
+                    const title = item.querySelector('h4').textContent.toLowerCase();
+                    const author = item.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || author.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.getElementById('closeModal');
+
+        masonryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                modalImage.src = imgSrc;
+                modal.classList.add('active');
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
